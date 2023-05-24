@@ -19,6 +19,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 
 section {
@@ -27,7 +28,7 @@ section {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("../images/hue_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,10 +79,10 @@ header a {
 footer {
   color: white;
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.8)
     ),
-    url("../images/lisbon-footer.png");
+    url("../images/hue_cot.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +99,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
-  margin-right: 20px;
   line-height: 24px;
 }
 
@@ -116,6 +116,7 @@ footer a {
   color: white;
   opacity: 0.7;
 }
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
